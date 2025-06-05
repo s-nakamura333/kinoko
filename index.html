@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>毒キノコの分類</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>毒キノコの分類</h1>
+    <table border="1" cellspacing="0" cellpadding="8">
+        <tr>
+            <th>日付</th>
+            <td>2024/9/6</td>
+        </tr>
+        <tr>
+            <th>タイトル</th>
+            <td>毒キノコの分類</td>
+        </tr>
+        <tr>
+            <th>テーマ選定の理由</th>
+            <td>自分の娘が毒があるかわからない謎のキノコを手に取ろうとしたことがあったため</td>
+        </tr>
+        <tr>
+            <th>想定業界</th>
+            <td>小学校、幼稚園等の教育機関及び行政</td>
+        </tr>
+        <tr>
+            <th>想定企業</th>
+            <td>各地の教育委員会や学校法人</td>
+        </tr>
+        <tr>
+            <th>想定ポジション</th>
+            <td>学校教諭、幼稚園教諭、保育士</td>
+        </tr>
+        <tr>
+            <th>背景</th>
+            <td>
+                低学年の児童や幼児は、注意していないと何を口に入れるかわからないところがあります。<br>
+                そんな中、国内では毎年毒キノコを原因とする食中毒が発生しています。<br>
+                小さな子供と接する教育現場では毒キノコかどうか素早く分類するためのツールが必要です。<br><br>
+                【参考１】厚生労働省HP「毒キノコによる食中毒に注意しましょう」<br>
+                <a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/kinoko/index.html" target="_blank">
+                    https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/kinoko/index.html
+                </a><br>
+                【参考２】農林水産省HP「毒きのこによる食中毒の発生状況」<br>
+                <a href="https://www.maff.go.jp/j/syouan/nouan/rinsanbutsu/yaseikinoko/joukyou.html" target="_blank">
+                    https://www.maff.go.jp/j/syouan/nouan/rinsanbutsu/yaseikinoko/joukyou.html
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <th>目的</th>
+            <td>
+                本成果物は毒キノコに起因する児童の健康被害を防ぐことを目的としています。<br>
+                ・成果物を活用し毒キノコかどうかの分類を行い、毒キノコによる健康被害を回避します。<br>
+                ・児童とともにキノコを観察してデータを収集することにより、新たな教育機会を設けます。<br>
+                →児童の住んでいる環境にどのようなキノコがあるのか、毒はあるのかを学ぶことができます。
+            </td>
+        </tr>
+        <tr>
+            <th>概要</th>
+            <td>本成果物はキノコの物理的特性データから毒の有無を判定するものです。</td>
+        </tr>
+        <tr>
+            <th>アプローチの理由</th>
+            <td>ChatGPTに必要要件を提示した上で、扱いやすさと動作の軽さから判断し、ランダムフォレストによるクラス分類を選択しました。</td>
+        </tr>
+        <tr>
+            <th>結果を何に活かせるのか</th>
+            <td>
+                将来的には撮影した画像からキノコの物理的特性を判定し、判定結果を本モデルに分析させることで毒の有無の判定を行えるようになると考えられます。<br><br>
+                本モデルを流用することで、下記のような利用法が想定されます。<br>
+                ・農作物の分類に活用し、生産物の検品や仕分けにかかる時間を短縮する。<br>
+                ・海産物の物理的特性データを用意し、水揚げされた魚介類の種類を判定する。<br>
+                ・利用客を体型で分類し、最適なサイズの洋服を素早く提供する。
+            </td>
+        </tr>
+        <tr>
+            <th>使用言語・環境</th>
+            <td>Python/Jupiter Notebook</td>
+        </tr>
+    </table>
+</body>
+</html>
